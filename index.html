@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HY CODING · 윤혜영 바이브 코딩 포트폴리오</title>
+<style>
+  :root { --bg:#f6f4ef; --card:#fff; --ink:#1d1d1f; --sub:#6b6b70; --line:#e4e1d9; --accent:#e4572e; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#141415; --card:#1f1f21; --ink:#f2f2f2; --sub:#a0a0a6; --line:#2e2e31; } }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:"Pretendard",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+  header { max-width:1080px; margin:0 auto; padding:72px 24px 40px; }
+  .eyebrow { color:var(--accent); font-weight:700; letter-spacing:.12em; font-size:13px; }
+  h1 { font-size:clamp(32px,5vw,52px); line-height:1.15; margin:10px 0 14px; letter-spacing:-.02em; }
+  header p { color:var(--sub); max-width:560px; }
+  main { max-width:1080px; margin:0 auto; padding:0 24px 80px; display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:18px; }
+  a.card { display:flex; flex-direction:column; gap:10px; padding:24px; background:var(--card); border:1px solid var(--line); border-radius:18px; color:inherit; text-decoration:none; transition:transform .15s, border-color .15s; }
+  a.card:hover { transform:translateY(-3px); border-color:var(--accent); }
+  .emoji { font-size:34px; }
+  .card h2 { font-size:20px; letter-spacing:-.01em; }
+  .card p { color:var(--sub); font-size:15px; flex:1; }
+  .tags { display:flex; flex-wrap:wrap; gap:6px; }
+  .tags span { font-size:12px; padding:3px 10px; border-radius:999px; background:var(--bg); color:var(--sub); border:1px solid var(--line); }
+  .go { color:var(--accent); font-weight:600; font-size:14px; }
+  footer { text-align:center; color:var(--sub); font-size:13px; padding:0 24px 48px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">HY CODING</div>
+  <h1>바이브 코딩 작업물 모음</h1>
+  <p>AI와 함께 기획부터 구현까지 만든 웹 서비스와 게임들입니다. 카드를 누르면 바로 실행해 볼 수 있어요.</p>
+</header>
+<main>
+  <a class="card" href="./last-checkout/">
+    <div class="emoji">🕯️</div><h2>마지막 퇴실 기록</h2>
+    <p>건물 곳곳의 단서를 모아 진실을 밝히는 추리 방탈출 게임.</p>
+    <div class="tags"><span>게임</span><span>스토리</span></div><div class="go">플레이하기 →</div>
+  </a>
+  <a class="card" href="./trip-i/">
+    <div class="emoji">🧳</div><h2>TRIP I</h2>
+    <p>여행지와 일정을 고르면 동선을 짜 주는 여행 루트 프로그램.</p>
+    <div class="tags"><span>웹 서비스</span><span>여행</span></div><div class="go">열어보기 →</div>
+  </a>
+  <a class="card" href="./jikgwan-mate/">
+    <div class="emoji">⚾</div><h2>직관메이트</h2>
+    <p>야구 직관 일정과 동행을 함께 계획하는 직관 여행 앱.</p>
+    <div class="tags"><span>웹 앱</span><span>야구</span></div><div class="go">열어보기 →</div>
+  </a>
+  <a class="card" href="./jikgwan-mate-homepage/">
+    <div class="emoji">🏟️</div><h2>직관메이트 홈페이지</h2>
+    <p>상품 소개, 이용 안내, 예약, Q&amp;A까지 갖춘 서비스 소개 사이트.</p>
+    <div class="tags"><span>웹사이트</span><span>예약</span></div><div class="go">열어보기 →</div>
+  </a>
+  <a class="card" href="./kbo-11th-team/">
+    <div class="emoji">🧢</div><h2>프로야구 11번째 구단</h2>
+    <p>나만의 KBO 11번째 구단을 창단하고 선수단을 꾸려 보는 시뮬레이션.</p>
+    <div class="tags"><span>시뮬레이션</span><span>야구</span></div><div class="go">열어보기 →</div>
+  </a>
+  <a class="card" href="./maratang-tycoon/">
+    <div class="emoji">🌶️</div><h2>마라탕 가게 타이쿤</h2>
+    <p>손님 주문에 맞춰 재료를 담아 마라탕 가게를 운영하는 타이쿤 게임.</p>
+    <div class="tags"><span>게임</span><span>타이쿤</span></div><div class="go">플레이하기 →</div>
+  </a>
+  <a class="card" href="./history-cave/">
+    <div class="emoji">🦴</div><h2>진짜? 가짜? 동굴 탈출</h2>
+    <p>역사 문장이 진짜인지 가짜인지 맞히며 동굴을 빠져나가는 퀴즈 게임.</p>
+    <div class="tags"><span>퀴즈</span><span>교육</span></div><div class="go">플레이하기 →</div>
+  </a>
+  <a class="card" href="./outfit/">
+    <div class="emoji">🧥</div><h2>오늘 뭐 입지</h2>
+    <p>기온에 맞는 옷차림 조합을 추천해 주는 코디 추천 서비스.</p>
+    <div class="tags"><span>웹 서비스</span><span>패션</span></div><div class="go">열어보기 →</div>
+  </a>
+</main>
+<footer>© 윤혜영 · HY CODING</footer>
+</body>
+</html>
